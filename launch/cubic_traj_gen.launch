@@ -1,0 +1,30 @@
+<!-- This launch file serves as a single source for running all of the ROS nodes below -->
+
+<launch>
+
+    <node
+        pkg="ar_week8_test" name="points_generator" type="points_generator.py">
+    </node>
+
+    <node
+        pkg="ar_week8_test" name="cubic_traj_planner" type="cubic_traj_planner.py">
+    </node>
+
+    <node
+        pkg="ar_week8_test" name="compute_cubic_traj_server" type="compute_cubic_coeffs.py">
+    </node>
+
+    <node
+        pkg="ar_week8_test" name="plot_cubic_traj" type="plot_cubic_traj.py">
+    </node>
+
+    <node
+        pkg="rqt_plot" type="rqt_plot" name="rqt_plot">
+    </node>
+
+    <node
+        pkg="rqt_graph" type="rqt_graph" name="rqt_graph">
+    </node>
+    
+
+</launch>

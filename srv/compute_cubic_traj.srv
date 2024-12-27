@@ -1,0 +1,13 @@
+# Initial and final time, position, and velocity parameters for computing trajectory
+# service that returns the coefficients
+float32 t0
+float32 tf
+float32 p0
+float32 pf
+float32 v0
+float32 vf
+---
+float32 a0
+float32 a1
+float32 a2
+float32 a3
